@@ -416,6 +416,12 @@ address {
   background-repeat: no-repeat;
     
 }
+@media (min-resolution: 2x) {
+  .hero-section {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url("../images/people-office@2x.jpg");
+  }
 .hero-container {
     display: flex;
     flex-direction: column;
