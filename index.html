@@ -19,7 +19,8 @@
     <header class="header" id="home">
         <div class="container header-container">
             <nav class="header-nav">
-             <a href="./index.html" class="logo">Web<span class="span-logo-dark">Studio</span></a>
+             <a href="./index.html" class="logo 
+             ">Web<span class="span-logo-dark">Studio</span></a>
                 <ul class="main-nav" >
                     <li><a class="main-nav-list current" href="./index.html">Studio</a></li>
                     <li><a class="main-nav-list" href="">Portfolio</a></li>
@@ -33,11 +34,79 @@
                 
                 </ul>   
             </address>
+            <button class="burger-btn" type="button" data-menu-open>
+                <svg class="burger-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
-    </header>
-    
-    <main>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu-container">
+                <button class="mobile-menu-close" type="button" data-menu-close>
+                    <svg class="mobile-menu-close-icon" width="8" height="8" aria-hidden="true">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-menu-nav">
+                    <ul class="mobile-menu-list">
+                    <li><a class="mobile-menu-link current" href="./index.html">Studio</a></li>
+                    <li><a class="mobile-menu-link" href="">Portfolio</a></li>
+                    <li><a class="mobile-menu-link" href="">Contacts</a></li>
+                </ul>
+                </nav>  
+                <address  class="address-mobile">
+                    <ul class="address-item-mobile">
+                        <li><a class="address-list-mobile" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                         <li><a class="address-list-mobile" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                
+                    </ul>   
+                </address>
+                <div class="mobile-social">
+                    <ul class="social-icons-list-mobile" >
+                        <li class="mobile-icon-item">
+                            <a  class="link mobile-icon-item" href="" aria-label="Instagram">
+                            <svg class="icon-social" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                            </a>
+                                
+                        </li>
 
+                        <li class="mobile-icon-item">
+                            <a class="link mobile-icon-item" href="" aria-label="Twitter">
+                            <svg class="icon-social" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                            </a>
+                                
+                        </li>
+
+                        <li class="mobile-icon-item">
+                            <a class="link mobile-icon-item" href="" aria-label="Facebook">
+                            <svg class="icon-social" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                            </a>
+                                
+                        </li>
+
+                        <li class="mobile-icon-item">
+                            <a class="link mobile-icon-item" href="" aria-label="Linkedin">
+                            <svg class="icon-social" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                            </a>
+                                
+                        </li>
+                    </ul>
+                </div>
+                    
+            </div>
+
+        </div>
+     
+    </header>
+    <main>
         <!-- Hero Section -->   
         <Section class="hero-section">
             <div class="container hero-container">
@@ -296,10 +365,11 @@
                 </div>
 
         </section>
-        <section class="portfolio" id="portfolio"> 
+        <!-- Portfolio -->
+        <section class=" portfolio" id="portfolio"> 
             <div class="container portfolio-container">
-            <h2 class="title"> Our Portfolio</h2>
-            <ul class="portfolio-list">
+             <h2 class="title"> Our Portfolio</h2>
+              <ul class="portfolio-list">
                 <li class="portfolio-list-item" tabindex="0">
                     <div class="thumb">
                         <img src="./images-portfolio/img-5.jpg" alt="Banking App" width="360" height="300">
@@ -390,19 +460,20 @@
                         
                     </div>
                 </li>
-            </ul>
+              </ul>
             </div>
         </section>
-
-            
+                 
     </main>
+
     <footer class="footer" id="./index.html">
         <div class="container footer-block">
 
-            <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-container">
             <a href="index.html" class="logo">Web<span class="span-logo-light">Studio</span></a>
             <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
-            </div>
+                </div>
             <div class="footer-container1">
                 <p class="subtitle">Social media</p>
                     <ul class="social-icons-list" >
@@ -445,6 +516,7 @@
                         </ul>
                     
             </div>
+            </div>
 
             <div class="footer-form-wrap">
                 <p class="footer-subscribe-title">Subscribe</p>
@@ -466,7 +538,7 @@
 
     </footer>
 
-<div class="backdrop" data-modal>
+<div class="hidden backdrop" data-modal>
   <div class="modal">
     <button class="modal-close" type="button" data-modal-close>
       <svg class="modal-close-icon" width="8" height="8" aria-hidden="true">
@@ -572,6 +644,7 @@
 </div>
 
  <script src="./js/modal.js"></script>
+ <script src="./js/menu.js"></script>
     
     
 </body>
