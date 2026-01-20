@@ -889,6 +889,9 @@ address {
     justify-content: center;
     align-items: center;
 }
+.footer-container1 .subtitle{
+    text-align: center;
+}
 
 /* paragraph Subscribe */
 .footer-subscribe-title {
