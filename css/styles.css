@@ -870,7 +870,7 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
-    margin-right: 80px;
+    text-align: center;
 
     }
 
@@ -889,9 +889,7 @@ address {
     justify-content: center;
     align-items: center;
 }
-.footer-container1 .subtitle{
-    text-align: center;
-}
+
 
 /* paragraph Subscribe */
 .footer-subscribe-title {
